@@ -1,0 +1,123 @@
+:root
+{
+	--bg-primary: #020618;
+	--bg-secondary: #252833;
+
+	--fg-primary: #f8fafc;
+	--fg-secondary: #676767;
+
+
+	--tint-yellow-dim: #fef200;
+	--tint-yellow: #fef200;
+	--tint-yellow-br: #fef200;
+
+	--tint-red-dim: #ed1b26;
+	--tint-red: #ed1b26;
+	--tint-red-br: #ed1b26;
+
+	--tint-blue-dim: #0177c1;
+	--tint-blue: #0177c1;
+	--tint-blue-br: #0177c1;
+}
+
+.tint-red
+{
+	--accent-tint: var(--tint-red);
+	--accent-tint-dim: var(--tint-red-dim);
+	--accent-tint-br: var(--tint-red-br);
+}
+
+.tint-blue
+{
+	--accent-tint: var(--tint-blue);
+	--accent-tint-dim: var(--tint-blue-dim);
+	--accent-tint-br: var(--tint-blue-br);
+}
+
+.tint-yellow
+{
+	--accent-tint: var(--tint-yellow);
+	--accent-tint-dim: var(--tint-yellow-dim);
+	--accent-tint-br: var(--tint-yellow-br);
+}
+
+html
+{
+	width: 100vw;
+
+	height: 100vh;
+	height: 100svh;
+
+	margin: 0;
+	padding: 0;
+
+	font-size: 1.6em;
+	line-height: 1.4;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body
+{
+	width: 100%;
+	max-width: 1252px;
+
+	height: 100%;
+
+	/*  --- Content padding code --- */
+	/* width: calc(100% - 2em); */
+	/* height: calc(100% - 2em); */
+	/* padding: 1em; */
+	/*  --- Content padding code --- */
+
+	padding: 0;
+	margin: 0;
+
+	color: var(--fg-primary);
+	background: var(--bg-primary);
+	font-family: Sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+header, footer
+{
+	padding: 1rem 2rem;
+	background-color: var(--bg-secondary);
+
+	z-index: 1;
+}
+
+header
+{
+	text-wrap: nowrap;
+	color: var(--accent-tint);
+
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+div.spacer
+{
+	flex-basis: 100%;
+}
+
+h1
+{
+	text-align: center;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+}
+
+a, a:link { color: var(--accent-tint);     } /* Unvisited link  */
+a:visited { color: var(--accent-tint-dim); } /* Link in history */
+a:hover   { color: var(--accent-tint-br);  } /* Mouse hovering  */
+a:active  { color: var(--fg-primary);      } /* Mouse clicking  */
