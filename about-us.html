@@ -36,7 +36,7 @@
 
 	<h2> Admin board </h2>
 
-	<div class="scrollable tint-red">
+	<div class="user-container tint-red">
 
 		<div class="user">
 			<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
@@ -86,7 +86,7 @@
 
 	<h2> Moderators </h2>
 
-	<div class="scrollable tint-blue">
+	<div class="user-container tint-blue">
 
 		<div class="user">
 			<img src="assets/profile-pictures/skybeat.webp" alt="Apotek pfp">
@@ -177,19 +177,20 @@ h2
 	margin: 2rem 0 1rem 0;
 }
 
-div.scrollable
+div.user-container
 {
-	padding: 1rem 0;
-
-	overflow-x: scroll;
-
 	display: flex;
-	gap: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
 div.user
 {
-	padding: 1rem;
+	flex-basis: 25%;
+
+	padding: .8rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -202,7 +203,7 @@ div.user
 
 div.user > img
 {
-	width: 15ch;
+	max-width: 12ch;
 	border-radius: 50%;
 	border: .2rem solid var(--accent-tint);
 }
@@ -217,7 +218,7 @@ div.user > span
 
 div.user > p
 {
-	width: 20ch;
+	max-width: 20ch;
 	color: var(--fg-secondary);
 	text-align: center;
 }
