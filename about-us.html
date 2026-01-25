@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
 
 <title>About us - DegenTech</title>
 </head>
@@ -21,7 +21,7 @@
 <main>
 	<h1> Our Team! </h1>
 
-	<div class="box">
+	<div class="callout-box">
 		<div class="callout">
 			<p>
 				We host open meets and presentations on VRchat and hangout on
@@ -34,100 +34,41 @@
 		</div>
 	</div>
 
-	<h2> Admin board </h2>
+	<div id="members-section-container">
 
-	<div class="user-container tint-red">
+		<h2> Admin board </h2>
 
-		<div class="user">
-			<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
-			<span>apotek</span>
-			<p>
-				An applied physicist and an entrepreneur,
-				a silly fox on the internet, a toaster sometimes
-			</p>
-		</div>
+		<section class="members-container tint-red">
+			<div class="member">
+				<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
+				<span>apotek</span>
+				<p>
+					An applied physicist and an entrepreneur,
+					a silly fox on the internet, a toaster sometimes
+				</p>
+			</div>
 
-		<div class="user">
-			<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
-			<span>apotek</span>
-			<p>
-				An applied physicist and an entrepreneur,
-				a silly fox on the internet, a toaster sometimes
-			</p>
-		</div>
+			<div class="member">
+				<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
+				<span>apotek</span>
+				<p>
+					An applied physicist and an entrepreneur,
+					a silly fox on the internet, a toaster sometimes
+				</p>
+			</div>
 
-		<div class="user">
-			<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
-			<span>apotek</span>
-			<p>
-				An applied physicist and an entrepreneur,
-				a silly fox on the internet, a toaster sometimes
-			</p>
-		</div>
+			<div class="member">
+				<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
+				<span>apotek</span>
+				<p>
+					An applied physicist and an entrepreneur,
+					a silly fox on the internet, a toaster sometimes
+				</p>
+			</div>
+		</section>
 
-		<div class="user">
-			<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
-			<span>apotek</span>
-			<p>
-				An applied physicist and an entrepreneur,
-				a silly fox on the internet, a toaster sometimes
-			</p>
-		</div>
-
-		<div class="user">
-			<img src="assets/profile-pictures/apotek.webp" alt="Apotek pfp">
-			<span>apotek</span>
-			<p>
-				An applied physicist and an entrepreneur,
-				a silly fox on the internet, a toaster sometimes
-			</p>
-		</div>
 	</div>
 
-	<h2> Moderators </h2>
-
-	<div class="user-container tint-blue">
-
-		<div class="user">
-			<img src="assets/profile-pictures/skybeat.webp" alt="Apotek pfp">
-			<span>sky beat</span>
-			<p>
-				Astrophysicist by day, progressive metal musician by night.
-			</p>
-		</div>
-
-		<div class="user">
-			<img src="assets/profile-pictures/skybeat.webp" alt="Apotek pfp">
-			<span>sky beat</span>
-			<p>
-				Astrophysicist by day, progressive metal musician by night.
-			</p>
-		</div>
-
-		<div class="user">
-			<img src="assets/profile-pictures/skybeat.webp" alt="Apotek pfp">
-			<span>sky beat</span>
-			<p>
-				Astrophysicist by day, progressive metal musician by night.
-			</p>
-		</div>
-
-		<div class="user">
-			<img src="assets/profile-pictures/skybeat.webp" alt="Apotek pfp">
-			<span>sky beat</span>
-			<p>
-				Astrophysicist by day, progressive metal musician by night.
-			</p>
-		</div>
-
-		<div class="user">
-			<img src="assets/profile-pictures/skybeat.webp" alt="Apotek pfp">
-			<span>sky beat</span>
-			<p>
-				Astrophysicist by day, progressive metal musician by night.
-			</p>
-		</div>
-	</div>
 </main>
 
 </body>
@@ -139,7 +80,7 @@ main
 	padding: 2rem;
 }
 
-div.box
+div.callout-box
 {
 	width: 100%;
 	display: flex;
@@ -174,10 +115,11 @@ div.callout > p
 
 h2
 {
+	text-transform: capitalize;
 	margin: 2rem 0 1rem 0;
 }
 
-div.user-container
+section.members-container
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -186,7 +128,7 @@ div.user-container
 	gap: 1rem;
 }
 
-div.user
+div.member
 {
 	flex-basis: 25%;
 
@@ -201,14 +143,14 @@ div.user
 	box-shadow: inset 0px 0px 10px -3px rgba(255, 255, 255, 0.25);
 }
 
-div.user > img
+div.member > img
 {
 	max-width: 12ch;
 	border-radius: 50%;
 	border: .2rem solid var(--accent-tint);
 }
 
-div.user > span
+div.member > span
 {
 	font-weight: 600;
 
@@ -216,13 +158,12 @@ div.user > span
 	text-align: center;
 }
 
-div.user > p
+div.member > p
 {
 	max-width: 20ch;
 	color: var(--fg-secondary);
 	text-align: center;
 }
-
 </style>
 
 </html>

@@ -1,0 +1,27 @@
+{
+	"admin board":
+	{
+		"apotek":
+		{
+			"profile_picture_filename": "apotek.webp",
+			"description": "An applied physicist and an entrepreneur, a silly fox on the internet, a toaster sometimes",
+			"socials":
+			{
+				"discord": "apotek"
+			}
+		},
+		"btex":
+		{
+			"profile_picture_filename": "",
+			"description": "",
+			"socials":
+			{
+				"discord": "btex"
+			}
+		}
+	},
+
+	"moderators":
+	{
+	}
+}

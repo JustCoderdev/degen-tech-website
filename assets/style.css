@@ -6,18 +6,17 @@
 	--fg-primary: #f8fafc;
 	--fg-secondary: #676767;
 
-
-	--tint-yellow-dim: #fef200;
+	--tint-yellow-dim: #fef200; /* TODO: Add missing tint */
 	--tint-yellow: #fef200;
-	--tint-yellow-br: #fef200;
+	--tint-yellow-br: #fef200;  /* TODO: Add missing tint */
 
-	--tint-red-dim: #ed1b26;
+	--tint-red-dim: #ed1b26;    /* TODO: Add missing tint */
 	--tint-red: #ed1b26;
-	--tint-red-br: #ed1b26;
+	--tint-red-br: #ed1b26;     /* TODO: Add missing tint */
 
-	--tint-blue-dim: #0177c1;
+	--tint-blue-dim: #004a78;
 	--tint-blue: #0177c1;
-	--tint-blue-br: #0177c1;
+	--tint-blue-br: #4c99c9;
 }
 
 .tint-red
