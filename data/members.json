@@ -1,27 +1,116 @@
-{
-	"admin board":
+[
 	{
-		"apotek":
-		{
-			"profile_picture_filename": "apotek.webp",
-			"description": "An applied physicist and an entrepreneur, a silly fox on the internet, a toaster sometimes",
-			"socials":
+		"role": "Admin",
+		"members": [
 			{
-				"discord": "apotek"
-			}
-		},
-		"btex":
-		{
-			"profile_picture_filename": "",
-			"description": "",
-			"socials":
+				"name": "Apotek",
+				"bio": "Physicist, entrepreneur, founder and professional tinkerer. Admin of DegenTech, CEO of (REDACTED). Specialized in microfabrication. Passionate about manufacturing, research and development, business, philosophy, traveling and shooting things.",
+				"picture": "apotek.webp",
+				"socials": {
+					"discord": "https://discord.com/users/712826130637258812",
+					"telegram": "https://t.me/Apotek_k",
+					"twitter": "https://x.com/Apotek_0",
+					"vrchat": "https://vrchat.com/home/user/usr_7f883b1c-83ea-404e-b81f-da670f06ac2e"
+				}
+			},
 			{
-				"discord": "btex"
+				"name": "dte9021989",
+				"bio": "Cybersecurity professional, admin for DegenTech, silly fox on the Internet, keeper of the worst dad jokes imaginable. On a life long quest to discover the true color of the electron and whether or not it's spelled color or colour.",
+				"picture": "dte9021989.png"
 			}
-		}
+		]
 	},
-
-	"moderators":
 	{
+		"role": "Moderator",
+		"members": [
+			{
+				"name": "BTEX",
+				"bio": "Hi, I’m BTEX! I got a bunch of friends together and that became DegenTech! I now help moderate and act as a liaison to other communities. I am a professional analytical chemist by trade and in my free time I participate in sport sword fighting. Fight me about it.",
+				"picture": "btex.png"
+			},
+			{
+				"name": "Enbien",
+				"bio": "She/Her, Biochemist, DJ, occasional VR enjoyer",
+				"picture": "enbien.png",
+				"socials": {
+					"mixcloud": "https://www.mixcloud.com/NoBetterName/"
+				}
+			},
+			{
+				"name": "Skyebeat",
+				"bio": "'Sup! I'm Skye, a 25 year old cosmic space wizard (astrophysics PhD student) working to prevent us from destroying things in low-Earth orbit. Outside of that I've been writing music for much of my life, mostly progressive metal. I also enjoy 3D modeling and creative funny A/V experiences!",
+				"picture": "skyebeat.png",
+				"socials": {
+					"linktree": "https://linktr.ee/skye_valac"
+				}
+			},
+			{
+				"name": "Stroggy",
+				"bio": "Mathematician with a Ph.D. in computational fluid dynamics, and now a software engineer in the lithography industry! I help with moderation in DegenTech and sometimes try to host events as well. Interested in fluid sim's, cars of a bygone era, and generally socializing with likeminded people :)",
+				"picture": "stroggy.webp"
+			}
+		]
+	},
+	{
+		"role": "Event Host",
+		"members": [
+			{
+				"name": "Reality",
+				"bio": "Hai I'm Reality.exe :3. I mostly do web-dev stuff (Like this very website you're viewing right now :3) but I also love to dabble in just about every tech thing available live server management. I also created a functional cross-session Stargate network in Resonite.",
+				"picture": "reality.png",
+				"socials": {
+					"custom": "https://realityexe.ca"
+				}
+			},
+			{
+				"name": "Apro",
+				"bio": "(He/Him) We are the tree of knowledge",
+				"picture": "apro.png"
+			},
+			{
+				"name": "Brandon",
+				"bio": "Event host, flying snake, gremlin",
+				"picture": "brandon.png"
+			},
+			{
+				"name": "Furra",
+				"bio": "Hello! My name is Furra, and I host a regular movie night here in DegenTech! I am actively studying in IT, and plan on taking the CompTIA A+ in early 2027. I Hang out a lot in VR, If you see me, come say hi!",
+				"picture": "furra.png"
+			},
+			{
+				"name": "Helix",
+				"bio": "MSc Marine Biology so if something is from the ocean I am interested! Professionally, my passion lies in education. I work in Science and Maths teaching so I dabble around in a lot of disciplines, albeit at a surface level in most cases. I also yap about science while doing other things on twitch.",
+				"picture": "helix.png",
+				"socials": {
+					"twitch": "https://www.twitch.tv/helixthesnep",
+					"bluesky": "https://bsky.app/profile/helixalceratz.bsky.social",
+					"twitter": "https://x.com/helixalceratz"
+				}
+			},
+			{
+				"name": "K9",
+				"bio": "Thank you for bringing the community together through movie and series nights in VRChat. We appreciate the time and care you put into creating a welcoming space for everyone.",
+				"picture": "k9.png"
+			}
+		]
+	},
+	{
+		"role": "Mediatrix",
+		"members": [
+			{
+				"name": "Klaxsun",
+				"bio": "Hello! You can call me Klax․ I'm a biochemist with drug design experience, a VRChat creator, and a scuba diver, among other things.",
+				"picture": "klaxsun.png"
+			},
+			{
+				"name": "StellaWolf",
+				"bio": "Trans Non-binary Furry Lvl 25 (Spawned Sep․ 22) Mechanical designer Hobbies: RC cars, Guitar, Art, MTB, and more",
+				"picture": "stella-wolf.png",
+				"socials": {
+						"linktree": "https://linktr.ee/stellawolf"
+				}
+			}
+		]
 	}
-}
+]
+

@@ -1,0 +1,96 @@
+<!-- ASSUMPTION: There is only one `main` in the document at a time. -->
+
+<main>
+
+	<img class="glow" src="assets/degentech-logo.png" alt="DegenTech logo" />
+	<h1>DegenTech Inc.</h1>
+	<p> We are a network of working professional furries interested in STEMM </p>
+
+	<div class="socials">
+		<a href="https://bsky.app/profile/degentechinc.bsky.social" >
+			<img src="assets/icons/bluesky.svg" alt="bluesky logo" />
+		</a>
+
+		<a href="https://x.com/degentechinc">
+			<img src="assets/icons/x.svg" alt="x logo" />
+		</a>
+
+		<a href="https://www.youtube.com/@degentech">
+			<img src="assets/icons/youtube.svg" alt="youtube logo" />
+		</a>
+
+		<a href="https://discord.gg/dgtc">
+			<img src="assets/icons/discord.svg" alt="discord logo" />
+		</a>
+	</div>
+
+</main>
+
+<style>
+main
+{
+	max-width: 20rem;
+	margin-top: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+}
+
+main > img
+{
+	filter: drop-shadow(0px 0px 40mm rgba(255, 255, 255, 0.4));
+}
+
+main > p
+{
+	text-align: center;
+}
+
+main div.socials
+{
+	padding-top: 2rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+main div.socials a
+{
+	width: 3rem;
+	height: 3rem;
+
+	background-color: var(--bg-secondary);
+	transform: rotate(45deg);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main div.socials img
+{
+	width: 1.2rem;
+	height: 1.2rem;
+
+	transform: rotate(-45deg);
+	filter: invert(0.5);
+}
+
+main div.socials a:hover
+{
+	/* update with .glow */
+	filter: drop-shadow(0px 0px 5mm rgba(255, 255, 255, 0.1));
+}
+
+main div.socials a:hover > img
+{
+	filter: invert(1);
+}
+
+</style>
