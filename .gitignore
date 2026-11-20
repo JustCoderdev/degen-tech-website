@@ -1,2 +1,9 @@
 cache
 build
+discord.token
+youtube.token
+
+
+# Added by cargo
+
+/target

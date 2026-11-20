@@ -54,6 +54,7 @@ r#"
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>DegenTech</title>
         <link rel="stylesheet" href="assets/styles.css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
         <meta name="DegenTech.inc" content="Working professional group of VRC furs, geared towards STEMM and tech work and interests! We host regular meetups and try to foster connections among tech-y furries, friendly or professional!">
     </head>
     <body>
