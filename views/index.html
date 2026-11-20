@@ -29,18 +29,39 @@
 <style>
 main
 {
+	height: 100%;
 	max-width: 20rem;
-	margin-top: 2rem;
+	margin-top: 6rem;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
 	gap: 1rem;
+}
+
+@media screen and (max-width: 640px)
+{
+	main
+	{
+		margin-top: 2.5rem;
+	}
+
+	main div.socials a
+	{
+		width: 2.5rem !important;
+		height: 2.5rem !important;
+	}
+
+	main div.socials img
+	{
+		width: 1rem !important;
+		height: 1rem !important;
+	}
 }
 
 main > img
 {
+	max-width: 30%;
 	filter: drop-shadow(0px 0px 40mm rgba(255, 255, 255, 0.4));
 }
 
@@ -51,9 +72,10 @@ main > p
 
 main div.socials
 {
-	padding-top: 2rem;
+	padding: 2rem 1rem 0 1rem;
 
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;

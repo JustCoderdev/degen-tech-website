@@ -1,33 +1,38 @@
-use http::{Request, Response};
+extern crate http;
+extern crate serde;
+extern crate serde_json;
+
+// use http::{Request, Response};
 use std::fs;
-use serde_json::Result;
+// use serde_json::Result;
 use serde::{Deserialize, Serialize};
 
-enum GuildEventFrequency
-{
-    YEARLY = 0,
-    MONTHLY = 1,
-    WEEKLY = 2,
-    DAILY = 3,
-}
+// enum GuildEventFrequency
+// {
+//     YEARLY = 0,
+//     MONTHLY = 1,
+//     WEEKLY = 2,
+//     DAILY = 3,
+// }
+//
+// struct RecurrenceRule
+// {
+//     start: Date,
+//     end: Option<Date>,
+//     frequency: GuildEventFrequency,
+//     interval: i32
+// }
 
-struct RecurrenceRule
-{
-    start: Date,
-    end?: Optional<Date>,
-    frequency: GuildEventFrequency,
-    interval: i32;
-}
-
+#[derive(Serialize, Deserialize)]
 struct GuildEvent
 {
-    id: String,
-    description: Optional<String>,
-    scheduled_start_time: String,
-    scheduled_end_time: Optional<String>,
-    // status: 
-    image: Optional<String>,
-    recurrence_rule: Optional<RecurrenceRule>
+    guild_id: String,
+    // description: Option<String>,
+    // scheduled_start_time: String,
+    // scheduled_end_time: Option<String>,
+    // status:
+    // image: Option<String>,
+    // recurrence_rule: Option<RecurrenceRule>
 }
 
 fn main()
@@ -43,11 +48,11 @@ fn main()
     //
     // let response = send(request.body(()).unwrap());
     // dbg!(response);
-    //
-    let response: String = r#"{ "guild_id": "hi", "wa": 14 } "#;
 
-    let json: GuildEvent = serde_json::from_str(response)?
-    dbg!(json);
+    let response: &str = r#"{ "guild_id": "hi", "wa": 14 }"#;
+
+    let event: GuildEvent = serde_json::from_str(response).expect("A?");
+    println!("{}", event.guild_id);
 }
 
 

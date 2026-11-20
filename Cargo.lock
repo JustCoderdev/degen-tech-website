@@ -13,6 +13,7 @@ name = "degen-tech-website"
 version = "0.1.0"
 dependencies = [
  "http",
+ "serde",
  "serde_json",
 ]
 

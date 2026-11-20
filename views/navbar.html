@@ -6,29 +6,38 @@
 		<span>DegenTech</span>
 	</a>
 
-	<div class="spacer"></div>
-
-	<a href="about.html"    class="button">About Us</a>
-	<a href="events.html"   class="button">Events</a>
-	<a href="lectures.html" class="button">Lectures</a>
+	<div class="nav-btn">
+		<a href="about.html"    class="button">About Us</a>
+		<a href="events.html"   class="button">Events</a>
+		<a href="lectures.html" class="button">Lectures</a>
+	</div>
 </nav>
 
 <style>
 nav
 {
 	width: calc(100% - 2rem);
-	height: 3rem;
-	padding: 0 1rem;
+	padding: 0.2rem 1rem;
 
 	background-color: var(--bg-secondary);
 	text-wrap: nowrap;
 
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: center;
-	gap: 0.5rem;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: 0 0.5rem;
 
 	z-index: 1;
+}
+
+@media screen and (max-width: 640px)
+{
+	nav {
+		padding: 0.5rem 1rem 0rem 1rem;
+		flex-direction: column;
+	}
 }
 
 nav .home-btn img
@@ -45,7 +54,14 @@ nav .home-btn
 	flex-wrap: nowrap;
 	align-items: center;
 	gap: 0.5rem;
+}
 
+nav .nav-btn
+{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 0.5rem;
 }
 </style>
 
